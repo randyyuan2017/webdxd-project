@@ -1,4 +1,7 @@
+// var mainbottom = $('#main').offset().top + $('#main').height();
 var menuOpened = false;
+
+
 $('.menu-control').click(function(event){
 	if(menuOpened ==false){
 		$('.body').addClass('menu-open');
@@ -12,3 +15,15 @@ $('.menu-control').click(function(event){
 		menuOpened = false;
 	}
 });
+
+
+// $(window).on('scroll',function(){
+//     var stop = Math.round($(window).scrollTop());
+
+//     if (stop > mainbottom) {
+//         $('').addClass('past-main');
+//     } else {
+//         $('.nav').removeClass('past-main');
+//     }
+
+// });

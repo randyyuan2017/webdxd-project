@@ -1,13 +1,25 @@
 html{
 background-color:grey;
 height: 100%;
+font-size: 15px;
 }
 
 a{
 	color: white;
 	text-decoration: none;
 }
-
+a:hover{
+	color: white;
+	text-decoration: none;
+}
+a:clicked{
+	color: white;
+	text-decoration: none;
+}
+a:focus{
+	color: white;
+	text-decoration: none;
+}
 .side-menu{
 	position: absolute;
 	background-color: white;
@@ -17,16 +29,23 @@ a{
 	left: -231px;
 	padding: 10px;
 	width: 200px;
-	transition: left 0.3s linear; 
+	transition:0.3s linear; 
 }
 
 .body{
+	width: 100%;
 	position: relative;
 	left:0px;
 	height: 100%;
-	transition: left 0.3s linear;
+	transition:0.3s linear;
+	background-color: transparent;
 }
 
+.menu-control{
+	margin-left: 1%;
+	font-size: 1.8rem;
+	transition: 0.5s linear
+}
 .menu-open{
 	left:222px;
 }

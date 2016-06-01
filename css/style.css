@@ -42,6 +42,7 @@ a:focus{
 }
 .debug{
 	position:fixed;
+	width: 100px;
 	top:0;
 	left:0;
 	margin: 0;
@@ -60,9 +61,6 @@ a:focus{
 .team-logo{
 	float:left;
 	margin: 0;
-}
-.menu-open{
-	left:-20%;
 }
 .side-menu-appear{
 	left:80%;
@@ -112,7 +110,7 @@ h1, p{
 
 /*parallax scrolling styling*/
 .parallax {
-	perspective: 1px;
+	perspective: 300px;
 	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -138,6 +136,6 @@ h1, p{
 	transform-style: preserve-3d;
 }
 .transform{
-    transform:translate3d(100px, 0, -1px) rotateY(40deg);
+    transform:translate3d(300px, 0, -1px) rotateY(40deg);
 }
 /*parallax scroling styling ends*/

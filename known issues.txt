@@ -1,0 +1,2 @@
+1. Position of the side menu and debug button are not fixed as intended.
+2. Debug mode z-axis is not working properly. Can't see all the layers well in current setting.

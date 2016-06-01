@@ -50,8 +50,6 @@ a:focus{
 /*head styling*/
 .head{
 	height: 100vh;
-	background:url(../img/background.jpg);
-	background-size: cover;
 }
 .menu-control{
 	float:right;
@@ -72,8 +70,8 @@ a:focus{
 	display:inline-block;
 	font-weight: 100;
 }
-h1, p{
-	color:white;
+h1, p, i{
+	color:black;
 }
 .big-title{
 	font-weight: 500;
@@ -103,9 +101,6 @@ h1, p{
 .scrolling-photos{
 	height: 100vh;
 }
-
-
-
 /*body styling ends*/
 
 /*parallax scrolling styling*/
@@ -128,7 +123,7 @@ h1, p{
 	transform: translateZ(0);
 }
 .parallax__layer--back {
-	transform: translateZ(-1px) scale(2);
+	transform: translateZ(-1px) scale(1);
 }
 .parallax__group {
 	position: relative;
@@ -136,6 +131,36 @@ h1, p{
 	transform-style: preserve-3d;
 }
 .transform{
-    transform:translate3d(300px, 0, -1px) rotateY(40deg);
+    transform:translate3d(220px, 0, -1px) rotateY(40deg);
 }
 /*parallax scroling styling ends*/
+
+/*parallax background styling*/
+
+.shape{
+	margin: 50px;
+	height: 100px;
+	width: 100px;
+    animation:spin 3s linear infinite;
+}
+
+.triangle{
+	height:87px;
+	width:100px;
+	fill:transparent;
+	stroke:green;
+	stroke-width:2;
+	animation: color-change 3s linear infinite;
+}
+
+@keyframes spin {
+    50%  {top: 200px;}
+    50% {transform:rotate(360deg);}
+    100% {top: 0px;}
+    100% {transform:rotate(720deg);}
+}
+@keyframes color-change {
+    50%  {stroke:blue;}
+    100% {stroke:yellow;}
+}
+/*parallax background styling ends*/

@@ -105,11 +105,10 @@ h1, p, i{
 
 /*parallax scrolling styling*/
 .parallax {
-	perspective: 300px;
+    perspective:300px;
 	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: auto;
-	perspective-origin-x: 100%;
 }
 .parallax__layer {
 	position: absolute;
@@ -117,13 +116,12 @@ h1, p, i{
 	right: 0;
 	bottom: 0;
 	left: 0;
-	transform-origin-x: 100%;
 }
-.parallax__layer--base {
+.parallax__layer--base{
 	transform: translateZ(0);
 }
-.parallax__layer--back {
-	transform: translateZ(-2px) scale(1);
+.parallax__layer--fore {
+	transform: translateZ(70px) scale(.7);
 }
 .parallax__group {
 	position: relative;
@@ -131,41 +129,45 @@ h1, p, i{
 	transform-style: preserve-3d;
 }
 .transform{
-    transform:translate3d(220px, 0, -1px) rotateY(40deg);
+    transform:translate3d(700px, 0, -800px);
+    transform:rotateY(30deg);
 }
 /*parallax scroling styling ends*/
 
 /*parallax background styling*/
 .shape-map{
-	display:inline-block;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 }
 .shape{
-	position:absolute;
+	position:relative;
 	height: 100px;
 	width: 100px;
-    animation:spin 80s linear infinite;
+    animation:spin 70s linear infinite;
 }
 .triangle{
 	top:20%;
-	left:30%;
+	left:80%;
 }
-.circle{
+.circle-one{
 	top:10%;
 	left:50%;
 }
+.c-two{
+	top:70%;
+	left:15%;
+}
 .square{
 	top:80%;
-	left:90%;
+	left:40%;
 }
 .hexagon{
 	top:40%;
-	left:70%;
+	left:5%;
 }
 .arrow{
 	top:10%;
-	left:70%;
+	left:-20%;
 }
 
 .color{
@@ -178,7 +180,7 @@ h1, p, i{
 }
 
 @keyframes spin {
-    50%  {margin-top: 200px;}
+    50%  {margin-top: 150px;}
     50% {transform:rotate(360deg);}
     100% {margin-top: 0px;}
     100% {transform:rotate(720deg);}

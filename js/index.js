@@ -27,6 +27,9 @@ $('.debug').click(function(event){
 		debugMode=false;
 	}
 });
+for(var i=0; i<5;i++){
+$('.parallax__layer--fore').append('<div class="shape-map"><svg class="shape triangle"><polygon class="color" points="0,0 50,87 100,0"/></svg><svg class="shape circle-one"><circle class="color" cx="50" cy="50" r="20"></svg><svg class="shape c-two"><circle class="color" cx="50" cy="50" r="20"></svg><svg class="shape square"><polygon class="color" points="40,40 60,40 60,60 40,60"/></svg><svg class="shape hexagon"><polygon class="color" points="27,7 73,7 100,50 73,93 27,93 0,50"/></svg><svg class="shape arrow"><polygon class="color" points="50,0 30,80 50,0 70,80"/></svg></div>');
+}
 // $(window).on('scroll',function(){
 //     var stop = Math.round($(window).scrollTop());
 

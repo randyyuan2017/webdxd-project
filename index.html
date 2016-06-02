@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Project</title>
+	<title>Real Creative</title>
 
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -10,8 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body class="all">
-	<div class="parallax">
-		<div class="parallax__group">
+	<table class="parallax">
+		<!-- group1 -->
+		<div id="group1" class="parallax__group">
 			<!-- back layer -->
 			<div class="parallax__layer parallax__layer--back">
 			</div>
@@ -24,8 +25,8 @@
 						<a class="menu-control" href="#"><i class="fa fa-bars"></i></a>
 						<p class="team-logo">REL CREATIVE</p>	
 					</div>
-					<h1 class="big-title">REL CREATIVE</h1>
-					<h1 class="sub-title">Randy, Eleven & Leon</h1>
+					<h1 class="title big-title">REL CREATIVE</h1>
+					<h1 class="title sub-title">Randy, Eleven & Leon</h1>
 				</div>
 
 				<!-- body -->
@@ -34,20 +35,34 @@
 					</div> -->
 
 				</div>
-				
+
 				<!-- side menu -->
 				<nav class="side-menu">
 				<ul>
-					<a href="#"><li>Head</li></a>
-					<a href="#"><li>Web Work</li></a>
-					<a href="#"><li>Hobbies</li></a>
-					<a href="#"><li>Where We Are</li></a>
+					<a href="#"><li>About REL</li></a>
+					<a href="#"><li>What We Do</li></a>
+					<a href="#"><li>Team</li></a>
 					<a href="#"><li>Contact Us</li></a>
+					<a href="#"><li>Admin</li></a>
 				</ul>
 				</nav>
 			</div>
 		</div>
-	</div>
+
+		<!-- group2 -->
+		<div id="group2" class="parallax__group">
+			<!-- back layer -->
+			<div class="parallax__layer parallax__layer--back">
+			</div>
+			<!-- base layer -->
+			<div class="parallax__layer parallax__layer--base">
+				<h1 class="title">Where We Are</h1>
+				<div class="google-map">
+					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div><div id='gmap_canvas' style='height:600px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://mapswebsite.net/'>embed a google map</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=716cd507aee5b79936a1fffca2e7bfbb198ca067'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(49.26276903690181,-123.25307913395994),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.26276903690181,-123.25307913395994)});infowindow = new google.maps.InfoWindow({content:'<strong>ubc vancouver</strong><br>ubc vancouver<br>V5Z Vancouver<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.close(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+				</div>
+			</div>
+		</div>
+	</table>
 	<script src="js/jquery-1.12.4.min.js"></script>
 	<script src="js/index.js"></script>
 </body>

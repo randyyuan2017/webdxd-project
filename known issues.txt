@@ -2,3 +2,4 @@
 2. Debug mode z-axis is not working properly. Can't see all the layers well in current setting.
 3. Side-menu covers scroll-bar
 4. x-axis overflow
+5. Google Map styling needs work

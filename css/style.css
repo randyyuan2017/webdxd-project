@@ -1,0 +1,41 @@
+div.container {
+    white-space: nowrap;
+    display: inline-block;
+ }
+
+ img {
+ 	width: 30%; 
+ }
+
+.fade-animation {
+	-webkit-animation: fadeinout 4s linear 1 forwards;
+    animation: fadeinout 4s linear 1 forwards;
+}
+
+@keyframes fadeinout {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+
+.icon {
+	width: 50px;
+	margin-left: 45%;
+}
+
+.section1 {
+	color: #777777;
+	font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif
+	text-align: center;
+}
+
+
+.div-section {
+	width: 30%;
+}
+
+.div-section h3{
+	text-align: center;
+	font-family:'Open Sans', sans-serif;
+}

@@ -3,7 +3,6 @@
 <head>
 	<meta charset="utf-8">
 	<title>Real Creative</title>
-
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
@@ -39,14 +38,11 @@
 					<h1 class="title big-title">REL CREATIVE</h1>
 					<h1 class="title sub-title">Randy, Eleven & Leon</h1>
 				</div>
-
 				<!-- body -->
 				<div class="body"><!-- 
 					<div class="scrolling-photos">scrolling photos
 					</div> -->
-
 				</div>
-
 			</div>
 		</div>
 
@@ -58,9 +54,73 @@
 			<!-- base layer -->
 			<div class="parallax__layer parallax__layer--base">
 				<h1 class="title">Where We Are</h1>
-				<div class="google-map">
-					<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div><div id='gmap_canvas' style='height:600px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div> <a href='https://mapswebsite.net/'>embed a google map</a> <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=716cd507aee5b79936a1fffca2e7bfbb198ca067'></script><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(49.26276903690181,-123.25307913395994),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(49.26276903690181,-123.25307913395994)});infowindow = new google.maps.InfoWindow({content:'<strong>ubc vancouver</strong><br>ubc vancouver<br>V5Z Vancouver<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.close(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+				<div id="map">
 				</div>
+				<script>
+					function initMap() {
+					var mapDiv = document.getElementById('map');
+					var map = new google.maps.Map(mapDiv, {
+						center: {lat: 49.2006, lng: -123.2460},
+						zoom: 11, 
+						navigationControl: false,
+					    mapTypeControl: false,
+					    scaleControl: false,
+					    scrollwheel: false,
+					    disableDoubleClickZoom: true,
+					    streetViewControl: false,
+					});
+					var styles = [{featureType: "administrative.neighborhood",
+							    stylers: [
+							      { visibility: "off" }
+							    ]
+							  },{
+							    featureType: "road.highway",
+							    stylers: [
+							      { visibility: "off" }
+							    ]
+							  },{
+							    featureType: "transit.line",
+							    stylers: [
+							      { visibility: "off" }
+							    ]
+							  },{
+							    featureType: "poi.park",
+							    stylers: [
+							      { visibility: "off" }
+							    ]
+							  },{
+							    featureType: "landscape",
+							    stylers: [
+							      { hue: "#0022ff" }
+							    ]
+							  },{
+							    featureType: "water"  }
+							];
+					map.setOptions({styles: styles});
+
+					// var randy = new google.maps.Marker({
+					//   position: {lat: 49.263966, lng:-123.239873},
+					//   map: map,
+					//   icon: '../icon/randy.jpg'
+					// });
+
+					  var goldStar = {
+    path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
+    fillColor: 'yellow',
+    fillOpacity: 0.8,
+    scale: 0.5,
+    strokeColor: 'gold',
+    strokeWeight: 1
+  };
+
+  var marker = new google.maps.Marker({
+    position: {lat: 49.263966, lng:-123.239873},
+    icon:'../icon/randy.png',
+    map: map
+  });
+					}
+    			</script>
+    			<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
 			</div>
 		</div>
 	</table>

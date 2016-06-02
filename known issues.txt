@@ -1,2 +1,2 @@
-1. Debug mode z-axis is not working properly. Can't see all the layers well in current setting.
+1. Debug mode z-axis is not working properly. Can't see all the layers well in current setting. rotateY not working.
 2. x-axis overflow

@@ -265,7 +265,7 @@ p{
 	height: 40vh;
 }
 .transform .parallax__group{
-    transform:translate3d(700px, 0, -800px) rotateY(30deg);
+    transform:translate3d(700px, 0, -900px) rotateY(25deg);
 }
 /*parallax scroling styling ends*/
 

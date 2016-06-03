@@ -6,3 +6,6 @@ To do list:
 1. Content for "Who we are"
 2. Content for "Team member intro"
 3. Side menu hover effect(optional)
+
+Questions:
+1. Should we do a bootstrap modal on what we do icons?

@@ -1,7 +1,8 @@
 1. Debug mode z-axis is not working properly. Can't see all the layers well in current setting. rotateY not working.
 2. x-axis overflow
-
+3. Empty space at the bottom due to parallax effect
 
 To do list:
 1. Center Google Map when zooming
 2. Content for "Who we are", "What we do" and "Team member intro"
+3. Side menu hover effect(optional)

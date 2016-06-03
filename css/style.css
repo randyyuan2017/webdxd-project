@@ -79,6 +79,9 @@ p{
 /*side menu property ends*/
 
 /*nav bar property*/
+#team-logo{
+	font-size: 2.3rem;
+}
 #team-logo:hover{
 	cursor:pointer;
 }
@@ -181,6 +184,11 @@ p{
 	margin-left: 10%;
 	margin-right: 10%;
 }
+.scrolling-photos{
+	width: 70%;
+	margin-left: 17.2%;
+	margin-top: 2%;
+}
 #what-we-do-list{
 	width: 70%;
 	margin-left:17.2%;
@@ -254,7 +262,7 @@ p{
 	background-color:lightblue;
 }
 .filler{
-	height: 50vh;
+	height: 40vh;
 }
 .transform .parallax__group{
     transform:translate3d(700px, 0, -800px) rotateY(30deg);

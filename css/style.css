@@ -32,6 +32,16 @@ h1, p, i{
 	background-color: transparent;
 	font-family: 'Poiret One', cursive;
 }
+.small-font{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+}
+h1{
+	font-size: 1.5rem;
+}
+p{
+	font-size: 1rem;
+}
 /*general property ends*/
 
 /*side menu property*/

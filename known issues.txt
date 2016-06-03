@@ -1,6 +1,5 @@
-1. Debug mode z-axis is not working properly. Can't see all the layers well in current setting. rotateY not working.
-2. x-axis overflow
-3. Empty space at the bottom due to parallax effect
+1. x-axis overflow
+2. Empty space at the bottom due to parallax effect
 
 To do list:
 1. Center Google Map when zooming

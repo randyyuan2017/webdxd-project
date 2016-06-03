@@ -21,10 +21,16 @@ $('.menu-control').click(function(event){
 $('.debug').click(function(event){
 	if(debugMode==false){
 		$('.all').addClass('transform');
+		$('.parallax__layer').addClass('parallax-border');
+		$('.parallax__layer--base').addClass('parallax-red');
+		$('.parallax__layer--back').addClass('parallax-blue');
 		debugMode=true;
 	}else
 	{
 		$('.all').removeClass('transform');
+		$('.parallax__layer').removeClass('parallax-border');
+		$('.parallax__layer--base').removeClass('parallax-red');
+		$('.parallax__layer--back').removeClass('parallax-blue');
 		debugMode=false;
 	}
 });

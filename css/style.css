@@ -189,10 +189,17 @@ h1, p, i{
 	width:80%;
 	height:80%;
 	margin:0 10%;
-	border-radius:50%; 
+	border-radius:50%;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition: 0.5s ease-in-out;
+}
+.what-we-do-pic:hover{
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
 }
 #where-we-are{
-	margin-top: 50%;
+	margin-top: 23%;
 }
 /*body styling ends*/
 
@@ -223,7 +230,8 @@ h1, p, i{
 }
 .parallax__layer--back {
 	transform: translateZ(-300px) scale(2);
-	z-index: 0;
+	z-index: -1;
+	pointer-events:none;
 }
 
 .parallax-border{

@@ -60,8 +60,11 @@ h1, p, i{
 	margin:0;
 	margin-top: 35%;
 }
-.side-menu-appear{
+.side-menu-appear-menu{
 	left:80%;
+}
+.side-menu-appear-body{
+	width:80%;
 }
 /*side menu property ends*/
 

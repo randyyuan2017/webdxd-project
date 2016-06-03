@@ -5,5 +5,4 @@
 To do list:
 1. Center Google Map when zooming
 2. Content for "Who we are", "What we do" and "Team member intro"
-3. Changing nav bar
-4. Menu link animation
+3. Menu link animation

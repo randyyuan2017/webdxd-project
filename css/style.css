@@ -3,6 +3,7 @@ html{
 	font-size: 15px;
 	overflow-x: hidden;
 }
+/*general property*/
 a{
 	color: white;
 	text-decoration: none;
@@ -19,12 +20,21 @@ a:focus{
 	color: white;
 	text-decoration: none;
 }
-
-/*helper functions*/
-.center{
-	text-align: center;
+h1, p, i{
+	color:black;
 }
+.all{
+	width: 100%;
+	position: relative;
+	left:0px;
+	height: 100%;
+	transition:0.3s linear;
+	background-color: transparent;
+	font-family: 'Poiret One', cursive;
+}
+/*general property ends*/
 
+/*side menu property*/
 .side-menu{
 	position: fixed;
 	background-color: black;
@@ -35,7 +45,7 @@ a:focus{
 	padding: 10px;
 	width: 20%;
 	transition:0.3s linear; 
-	z-index: 1;
+	z-index: 2;
 	color:black;
 }
 .side-menu ul{
@@ -50,14 +60,34 @@ a:focus{
 	margin:0;
 	margin-top: 35%;
 }
-.all{
+.side-menu-appear{
+	left:80%;
+}
+/*side menu property ends*/
+
+/*nav bar property*/
+.menu-control{
+	float:right;
+	transition: 0.5s linear
+}
+.nav{
+	position:absolute;
 	width: 100%;
-	position: relative;
-	left:0px;
-	height: 100%;
-	transition:0.3s linear;
-	background-color: transparent;
-	font-family: 'Poiret One', cursive;
+	height: 8%;
+	z-index: 1;
+	transition: transform 0.5s linear;
+}
+.head-bar{
+	margin:15px 20%;
+	font-size:2.5em;
+	width: 59%;
+	display:inline-block;
+	font-weight: 100;
+}
+.past-main{
+    border-bottom: 1px solid black;
+    transform: translateY(-12px);
+    background-color: white;
 }
 .debug{
 	position:fixed;
@@ -65,33 +95,14 @@ a:focus{
 	top:0;
 	left:0;
 	margin: 0;
-	z-index: 1;
+	z-index: 2;
 }
+/*nav bar property ends*/
+
+
 /*head styling*/
 .head{
 	height: 100vh;
-}
-.menu-control{
-	float:right;
-	transition: 0.5s linear
-}
-
-.team-logo{
-	float:left;
-	margin: 0;
-}
-.side-menu-appear{
-	left:80%;
-}
-.head-bar{
-	font-size:2.5em;
-	width: 60%;
-	margin: 2% 20%;
-	display:inline-block;
-	font-weight: 100;
-}
-h1, p, i{
-	color:black;
 }
 
 .title{

@@ -59,3 +59,9 @@ $('a[href^="#"]').on('click',function (e) {
         'scrollTop': $(this.hash).offset().top+$('.parallax').scrollTop()-75
     }, 900, 'swing');
 });
+
+$('#team-logo').on('click',function () {
+    var target = this.hash;
+    $('.parallax').stop().animate({
+        'scrollTop': 0}, 900, 'swing');
+});

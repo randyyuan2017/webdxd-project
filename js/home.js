@@ -6,3 +6,4 @@ window.onload = function() {
   document.getElementById('fade').className = 'fade-animation';
  
 };
+

@@ -30,7 +30,11 @@ div.container {
 	text-align: center;
 }
 
-
+#div-sections{
+	max-width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .div-section {
 	width: 30%;
 }
@@ -74,7 +78,10 @@ div.container {
 	opacity: 0.4; 
 } 
 
-
+@media screen and (max-width: 950px) {
+  #columns { column-gap: 0px; }
+  #columns figure { width: 100%; }
+}
 
 
 

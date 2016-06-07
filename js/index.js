@@ -22,6 +22,7 @@ $('.debug').click(function(event){
 	if(debugMode==false){
 		$('.all').addClass('transform');
 		$('.parallax__layer').addClass('parallax-border');
+		$('.parallax__layer--front').addClass('parallax-green');
 		$('.parallax__layer--base').addClass('parallax-red');
 		$('.parallax__layer--back').addClass('parallax-blue');
 		debugMode=true;
@@ -29,6 +30,7 @@ $('.debug').click(function(event){
 	{
 		$('.all').removeClass('transform');
 		$('.parallax__layer').removeClass('parallax-border');
+		$('.parallax__layer--front').removeClass('parallax-green');
 		$('.parallax__layer--base').removeClass('parallax-red');
 		$('.parallax__layer--back').removeClass('parallax-blue');
 		debugMode=false;

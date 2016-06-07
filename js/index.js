@@ -44,10 +44,10 @@ $('.parallax__layer--back').append('<div class="shape-map"><svg class="shape tri
 
 var mainbottom = $('.head-bar').offset().top + $('.head-bar').height();
 var randyTop = $('#randy-photo').offset().top - $('#randy-photo').height()*0.6;
-var randyBottom = $('#randy-photo').offset().top - $('#randy-photo').height()*0.25;
+var randyBottom = $('#randy-photo').offset().top - $('#randy-photo').height()*0.3;
 var elevenTop = $('#eleven-photo').offset().top - $('#eleven-photo').height()*0.9;
-var elevenBottom = $('#eleven-photo').offset().top - $('#eleven-photo').height()*0.5;
-var leonTop = $('#leon-photo').offset().top - $('#leon-photo').height()*1.05;
+var elevenBottom = $('#eleven-photo').offset().top - $('#eleven-photo').height()*0.6;
+var leonTop = $('#leon-photo').offset().top - $('#leon-photo').height()*1.1;
 var leonBottom = $('#leon-photo').offset().top - $('#leon-photo').height()*0.8;
 $('.parallax').scroll(function() {
     var stop = Math.round($('.parallax').scrollTop());

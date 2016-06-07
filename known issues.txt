@@ -1,6 +1,8 @@
 Issues
 1. x-axis overflow
+2. Team member intro scroll scanner lag
 3. Google map can't seem to be made responsive(map can change size but the landscape inside does not readjust)
+4. No good ways to dynamically extend the site
 
 To do list:
 1. Content for "Who we are"

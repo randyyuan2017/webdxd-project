@@ -65,3 +65,24 @@ $('#team-logo').on('click',function () {
     $('.parallax').stop().animate({
         'scrollTop': 0}, 900, 'swing');
 });
+
+
+
+
+
+
+$(window).scroll(function(){
+	$('.fadeMeOut').each( function(i){
+        var boxFade = $(this).offset().top + $(this).height()/2;
+
+        
+        if ($(window).scrollTop() >= boxFade) {
+        	$(this).stop().fadeTo('fast',0);
+        }else {
+        	$(this).stop().fadeTo('fast',1);
+        }
+
+
+       
+     });    
+});

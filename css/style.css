@@ -252,10 +252,11 @@ p{
 }
 .individual-photos img{
 	position: absolute;
-	height: 120vh;
+	height: 100vh;
 }
 #randy-photo{
 	margin-top: 0;
+<<<<<<< HEAD
 	margin-left: 25%;
 }
 #eleven-photo{
@@ -265,6 +266,17 @@ p{
 #leon-photo{
 	margin-top: 200vh;
 	margin-left: 25%;
+=======
+	margin-left: 60%;
+}
+#eleven-photo{
+	margin-top: 100vh;
+	margin-left: 20%;
+}
+#leon-photo{
+	margin-top: 200vh;
+	margin-left: 60%;
+>>>>>>> origin/randy
 }
 #individual-intro p{
     position: absolute;

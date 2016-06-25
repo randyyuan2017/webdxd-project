@@ -1,13 +1,9 @@
 Issues
 1. x-axis overflow
-2. Team member intro scroll scanner lag
-3. Google map can't seem to be made responsive(map can change size but the landscape inside does not readjust)
-4. No good ways to dynamically extend the site
 
 To do list:
-1. Content for "Who we are"
+1. Write to us firebase connection
 2. Team member intro social media buttons
 3. Responsive Google Map
-
-Questions:
-1. Should we do a bootstrap modal on what we do icons?
+4. Direction aware hover effect
+5. More stuff in the background

@@ -28,7 +28,7 @@ h1, p, i{
 	position: relative;
 	left:0px;
 	height: 100%;
-	transition:0.3s linear;
+	transition:1s linear;
 	background-color: transparent;
 	font-family: 'Poiret One', cursive;
 }
@@ -57,7 +57,7 @@ p{
 	height: 100%;
 	top:-1px;
 	left: 100%;
-	padding: 10px;
+	padding: 0;
 	width: 20%;
 	transition:0.3s linear; 
 	z-index: 3;
@@ -65,15 +65,15 @@ p{
 }
 .side-menu ul{
 	margin-top: 15%;
+	padding: 0;
 	list-style-type: none;
 }
 .side-menu li{
-	padding:10px;
+	padding:16%;
 	width: 100%;
 	font-size:2em;
 	font-weight: 500;
 	margin:0;
-	margin-top: 35%;
 }
 .side-menu-appear-menu{
 	left:80%;
@@ -85,7 +85,7 @@ p{
 
 /*nav bar property*/
 #team-logo{
-	margin-top:0.1%;
+	margin-top:0.2%;
 	font-size: 2.3rem;
     transition:opacity 1s;
     width: 80%;
@@ -231,8 +231,6 @@ p{
 	text-align: center;
 }
 .letter{
-    border-radius: 5px;
-    border: 2px solid white;
 	background-color: white;
 	position: absolute;
     margin-top: 4%;
@@ -242,7 +240,7 @@ p{
 	z-index: 2;
 }
 .full-letter{
-	height: 70%;
+	height: 80%;
 	font-size:1.65rem;
 }
 .letter-input{

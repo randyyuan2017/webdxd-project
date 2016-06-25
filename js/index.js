@@ -1,3 +1,7 @@
+var myAppRef = new Firebase("https://relcreative.firebaseio.com/");
+
+var letterRef = new Firebase("https://relcreative.firebaseio.com/letter")
+
 var menuOpened = false;
 var debugMode = false;
 
@@ -37,11 +41,26 @@ $('.debug').click(function(event){
 	}
 });
 
+myAppRef.child("letter").on("value", function(snapshot) {
+  var letterList = snapshot.val();
+  $('.data-row').remove();
+  for (var key in letterList) {
+    var currentTr = $('<tr>').addClass('data-row').attr('id', key).appendTo('.table');
+    $('<td>').text(letterList[key].content).appendTo(currentTr);
+    $('<td>').text(letterList[key].date).appendTo(currentTr);
+    $('<td>').html('<button class="removeLetter"><i class="fa fa-times"></i></button>').appendTo(currentTr);
+  }
+});
+$('.table').on('click','.removeLetter',function(event){
+    var buttonClicked = event.target;
+    var currentUser = new Firebase("https://relcreative.firebaseio.com/letter/" + $(buttonClicked).parent().parent().parent().attr('id'));
+    currentUser.remove();
+});
 for(var i=0; i<1;i++){
 $('.parallax__layer--back').append('<div class="shape-map"><svg class="shape triangle"><polygon class="color" points="0,0 50,87 100,0"/></svg><svg class="shape triangle-two"><polygon class="color" points="0,0 50,87 100,0"/></svg><svg class="shape triangle-three"><polygon class="color" points="0,0 50,87 100,0"/></svg><svg class="shape triangle-four"><polygon class="color" points="0,0 50,87 100,0"/></svg><svg class="shape circle-one"><circle class="color" cx="50" cy="50" r="20"></svg><svg class="shape circle-two"><circle class="color" cx="50" cy="50" r="20"></svg><svg class="shape circle-three"><circle class="color" cx="50" cy="50" r="30"></svg><svg class="shape circle-four"><circle class="color" cx="50" cy="50" r="20"></svg><svg class="shape c-two-one"><circle class="color" cx="50" cy="50" r="40"></svg><svg class="shape square-one"><polygon class="color" points="40,40 60,40 60,60 40,60"/></svg><svg class="shape c-two-two"><circle class="color" cx="50" cy="50" r="35"></svg><svg class="shape square-two"><polygon class="color" points="40,40 60,40 60,60 40,60"/></svg><svg class="shape c-two-three"><circle class="color" cx="50" cy="50" r="25"></svg><svg class="shape square-three"><polygon class="color" points="40,40 60,40 60,60 40,60"/></svg><svg class="shape c-two-four"><circle class="color" cx="50" cy="50" r="20"></svg><svg class="shape square-four"><polygon class="color" points="40,40 60,40 60,60 40,60"/></svg><svg class="shape hexagon-one"><polygon class="color" points="27,7 73,7 100,50 73,93 27,93 0,50"/></svg><svg class="shape hexagon-two"><polygon class="color" points="27,7 73,7 100,50 73,93 27,93 0,50"/></svg><svg class="shape hexagon-three"><polygon class="color" points="27,7 73,7 100,50 73,93 27,93 0,50"/></svg><svg class="shape hexagon-four"><polygon class="color" points="27,7 73,7 100,50 73,93 27,93 0,50"/></svg><svg class="shape star-one"><polygon class="color" points="18,0 100,60 0,60 82,0 50,100"/></svg><svg class="shape star-two"><polygon class="color" points="18,0 100,60 0,60 82,0 50,100"/></svg><svg class="shape star-three"><polygon class="color" points="18,0 100,60 0,60 82,0 50,100"/></svg><svg class="shape star-four"><polygon class="color" points="18,0 100,60 0,60 82,0 50,100"/></svg></div>');
 }
 
-$('a[href^="#"]').on('click',function (e) {
+$('.click-animation').on('click',function (e) {
     e.preventDefault();
 
     var target = this.hash;
@@ -68,14 +87,13 @@ $('.parallax').scroll(function(){
 });
 
 var mainbottom = $('.head-bar').offset().top + $('.head-bar').height();
-var randyTop = $('#randy-photo').offset().top - $('#randy-photo').height()*1;
-var randyBottom = $('#randy-photo').offset().top - $('#randy-photo').height()*0.5;
-var elevenTop = $('#eleven-photo').offset().top - $('#eleven-photo').height()*1.1;
-var elevenBottom = $('#eleven-photo').offset().top - $('#eleven-photo').height()*0.6;
-var leonTop = $('#leon-photo').offset().top - $('#leon-photo').height()*1.4;
-var leonBottom = $('#leon-photo').offset().top - $('#leon-photo').height()*0.9;
+var randyTop = $('#randy-photo').offset().top -$('.parallax').height() + $('#randy-photo').height()*0.5;
+var randyBottom = $('#randy-photo').offset().top -$('.parallax').height() + $('#randy-photo').height()*1.2;
+var elevenTop = $('#eleven-photo').offset().top -$('.parallax').height() + $('#eleven-photo').height()*0.5;
+var elevenBottom = $('#eleven-photo').offset().top -$('.parallax').height() + $('#eleven-photo').height()*1.2;
+var leonTop = $('#leon-photo').offset().top -$('.parallax').height() + $('#leon-photo').height()*0.5;
+var leonBottom = $('#leon-photo').offset().top -$('.parallax').height() + $('#leon-photo').height()*1.2;
 
-    console.log(2);
 $('.parallax').scroll(function() {
     var stop = Math.round($('.parallax').scrollTop());
     if (stop > mainbottom) {
@@ -109,8 +127,10 @@ $('.parallax').scroll(function() {
 
     if ((stop > randyTop) && (stop < randyBottom)){
         $('#randy-intro').removeClass('invisibility');
+        $('.randy-button').removeClass('invisibility');
     }else{
         $('#randy-intro').addClass('invisibility');
+        $('.randy-button').addClass('invisibility');
     }
 
     if ((stop > elevenTop) && (stop < elevenBottom)){
@@ -124,4 +144,19 @@ $('.parallax').scroll(function() {
     }else{
         $('#leon-intro').addClass('invisibility');
     }
+});
+
+$('.send').click(function(event){
+var d = new Date();
+var date = d.getFullYear() + '/' +
+    ((''+(d.getMonth()+1)).length<2 ? '0' : '') + (d.getMonth()+1) + '/' +
+    ((''+d.getDate()).length<2 ? '0' : '') + d.getDate();
+var letter={
+    content: $('.full-letter').val(),
+    date: date
+};
+letterRef.push(letter);
+$('.send').text('Letter sent!');
+$('.send').prop('disabled', true);
+$(".full-letter").attr("disabled","disabled"); 
 });

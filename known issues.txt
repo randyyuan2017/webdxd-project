@@ -2,8 +2,5 @@ Issues
 1. x-axis overflow
 
 To do list:
-1. Write to us firebase connection
-2. Team member intro social media buttons
 3. Responsive Google Map
 4. Direction aware hover effect
-5. More stuff in the background

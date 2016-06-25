@@ -218,11 +218,11 @@ p{
 	filter: grayscale(0%);
 }
 #where-we-are{
-	margin-top: 183%;
+	margin-top: 0;
 }
 #map {
 	position: absolute;
-	margin-top: 185%;
+	margin-top: 2%;
 	width: 100%;
 	height: 10%;
 }
@@ -235,7 +235,7 @@ p{
     border: 2px solid white;
 	background-color: white;
 	position: absolute;
-    margin-top: 187%;
+    margin-top: 4%;
     left: 0;
     width: 30%;
     height: 9%;
@@ -250,23 +250,15 @@ p{
 	margin-left: 10%;
 	margin-right: 10%;
 }
+.individual-photos{
+	height: 300vh;
+}
 .individual-photos img{
 	position: absolute;
 	height: 100vh;
 }
 #randy-photo{
 	margin-top: 0;
-<<<<<<< HEAD
-	margin-left: 25%;
-}
-#eleven-photo{
-	margin-top: 100vh;
-	margin-left: -16%;
-}
-#leon-photo{
-	margin-top: 200vh;
-	margin-left: 25%;
-=======
 	margin-left: 60%;
 }
 #eleven-photo{
@@ -276,7 +268,14 @@ p{
 #leon-photo{
 	margin-top: 200vh;
 	margin-left: 60%;
->>>>>>> origin/randy
+}
+#eleven-photo{
+	margin-top: 100vh;
+	margin-left: 20%;
+}
+#leon-photo{
+	margin-top: 200vh;
+	margin-left: 60%;
 }
 #individual-intro p{
     position: absolute;
@@ -304,7 +303,7 @@ p{
     margin-left: 23%;
 }
 #eleven-intro{
-	margin-left: 49%;
+	margin-left: 54%;
 }
 #leon-intro{
     margin-left: 23%;

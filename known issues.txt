@@ -1,6 +1,2 @@
-Issues
-1. x-axis overflow
-
 To do list:
-3. Responsive Google Map
-4. Direction aware hover effect
+1. Direction aware hover effect

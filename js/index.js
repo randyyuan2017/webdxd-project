@@ -87,12 +87,12 @@ $('.parallax').scroll(function(){
 });
 
 var mainbottom = $('.head-bar').offset().top + $('.head-bar').height();
-var randyTop = $('#randy-photo').offset().top -$('.parallax').height() + $('#randy-photo').height()*0.9 ;
+var randyTop = $('#randy-photo').offset().top -$('.parallax').height() + $('#randy-photo').height()*0.55;
 var randyBottom = $('#randy-photo').offset().top -$('.parallax').height() + $('#randy-photo').height()*1.5;
-var elevenTop = $('#eleven-photo').offset().top -$('.parallax').height() + $('#eleven-photo').height()*0.9;
+var elevenTop = $('#eleven-photo').offset().top -$('.parallax').height() + $('#eleven-photo').height()*0.55;
 var elevenBottom = $('#eleven-photo').offset().top -$('.parallax').height() + $('#eleven-photo').height()*1.5;
-var leonTop = $('#leon-photo').offset().top -$('.parallax').height() + $('#leon-photo').height()*0.9;
-var leonBottom = $('#leon-photo').offset().top -$('.parallax').height() + $('#leon-photo').height()*1.5;
+var leonTop = $('#leon-photo').offset().top -$('.parallax').height() + $('#leon-photo').height()*0.85;
+var leonBottom = $('#leon-photo').offset().top -$('.parallax').height() + $('#leon-photo').height()*1.1;
 
 $('.parallax').scroll(function() {
     var stop = Math.round($('.parallax').scrollTop());

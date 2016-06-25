@@ -252,19 +252,19 @@ p{
 }
 .individual-photos img{
 	position: absolute;
-	height: 120vh;
+	height: 100vh;
 }
 #randy-photo{
 	margin-top: 0;
-	margin-left: 30%;
+	margin-left: 60%;
 }
 #eleven-photo{
 	margin-top: 100vh;
-	margin-left: -11%;
+	margin-left: 20%;
 }
 #leon-photo{
 	margin-top: 200vh;
-	margin-left: 30%;
+	margin-left: 60%;
 }
 #individual-intro p{
     position: absolute;

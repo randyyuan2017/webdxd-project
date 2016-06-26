@@ -86,6 +86,13 @@ $('.parallax').scroll(function(){
     });    
 });
 
+$('.write-to-us-wrapper').on('click',function(){
+    $('.write-to-us-icon').addClass('invisibility');
+    $('.write-to-us-icon-overlay').addClass('invisibility');
+    $('.write-to-us').addClass('invisibility');
+    $('.letter').addClass('visibility');
+});
+
 var mainbottom = $('.head-bar').offset().top + $('.head-bar').height();
 var randyTop = $('#randy-photo').offset().top -$('.parallax').height() + $('#randy-photo').height()*0.63;
 var randyBottom = $('#randy-photo').offset().top -$('.parallax').height() + $('#randy-photo').height()*1.5;

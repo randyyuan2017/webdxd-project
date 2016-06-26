@@ -47,6 +47,9 @@ p{
 	font-weight: 300;
 	font-size: 1.2rem;
 }
+textarea {
+   resize: none;
+}
 /*general property ends*/
 
 /*side menu property*/
@@ -234,19 +237,35 @@ p{
 	background-color: white;
 	position: absolute;
     margin-top: 4%;
-    left: 0;
+    left: 3%;
     width: 30%;
     height: 9%;
-	z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s;
 }
 .full-letter{
-	height: 80%;
+	height: 70%;
 	font-size:1.65rem;
 }
 .letter-input{
 	width: 80%;
 	margin-left: 10%;
 	margin-right: 10%;
+}
+.send{
+	height: 10%;
+	font-size: 2rem;
+}
+.write-to-us-icon{
+	position: absolute;
+	opacity: 1;
+	border-radius: 50%;
+	border: 2px solid black;
+    margin-left: 7%;
+    margin-top: 5%;
+    width: 40vh;
+    transition: opacity 0.5s;
 }
 .individual-photos{
 	height: 300vh;
@@ -293,6 +312,7 @@ p{
 }
 .visibility{
 	opacity: 1;
+	visibility: visible;
 }
 .invisibility{
 	opacity: 0;

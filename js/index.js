@@ -86,8 +86,15 @@ $('.parallax').scroll(function(){
     });    
 });
 
+$('.write-to-us-wrapper').on('click',function(){
+    $('.write-to-us-icon').addClass('invisibility');
+    $('.write-to-us-icon-overlay').addClass('invisibility');
+    $('.write-to-us').addClass('invisibility');
+    $('.letter').addClass('visibility');
+});
+
 var mainbottom = $('.head-bar').offset().top + $('.head-bar').height();
-var randyTop = $('#randy-photo').offset().top -$('.parallax').height() + $('#randy-photo').height()*0.64;
+var randyTop = $('#randy-photo').offset().top -$('.parallax').height() + $('#randy-photo').height()*0.63;
 var randyBottom = $('#randy-photo').offset().top -$('.parallax').height() + $('#randy-photo').height()*1.5;
 var elevenTop = $('#eleven-photo').offset().top -$('.parallax').height() + $('#eleven-photo').height()*0.65;
 var elevenBottom = $('#eleven-photo').offset().top -$('.parallax').height() + $('#eleven-photo').height()*1.5;
